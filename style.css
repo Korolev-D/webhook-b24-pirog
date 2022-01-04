@@ -1,0 +1,51 @@
+table{
+    margin-top: 10px;
+}
+table,tbody{
+    width: 100%;
+}
+th{
+    background: rgba(246, 119, 7, 0.43);
+    font-size: 18px;
+}
+th,td{
+    padding: 5px 15px;
+}
+td{
+    font-size: 17px;
+}
+tr{
+    position: relative;
+}
+tr:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px;
+    background: #a9a9a96e;
+}
+tr th:nth-child(1){
+    width: 180px;
+}
+tr th:nth-child(3){
+    width: 180px;
+}
+tr th:nth-child(4){
+    width: 220px;
+}
+.marker{
+    position: relative;
+}
+.marker:before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 8px;
+    background: url("danger.png");
+    background-size: cover;
+    width: 20px;
+    height: 19px;
+}
